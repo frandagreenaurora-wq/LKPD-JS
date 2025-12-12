@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //lkpd3 no 1//
+        let jeruk = 1
+        const harga_jeruk = jeruk*10*500 //jadi hasilnya 5000//
+        const diskon = 0.05*harga_jeruk //diskon 250//
+        const harga_setelah_diskon = harga_jeruk - diskon
+        //terkena diskon 4750//
+
+        console.log (`harga jeruk : ${harga_jeruk}`)
+        console.log (`diskon : ${diskon}`)
+        console.log (`harga setelah diskon : ${harga_setelah_diskon}`)
+
+        //lkpd3 no 2//
+        let bilangan = 1234567
+        const satuan = bilangan % 10 //sisa 7//
+        const puluhan = Math.floor((bilangan % 100) / 10)
+        //yg dalam kurung hasilnya 67, lalu dibagi 10 jadi 6,7 
+        // lalu di mathfloor jadi 6//
+        const ratusan = Math.floor((bilangan%1000)/100)
+        // hasil mod-567 lalu dibagi jadi 5,67 maka di math 
+        // jadi 5//
+        console.log (`satuan adalah ${satuan}`)
+        console.log (`puluhan adalah ${puluhan}`)
+        console.log (`ratusan adalah ${ratusan}`)
+
+        //lkpd3 no 3//
+        let suhu = 250
+        const fahre = (9/5*suhu+32)
+        if (fahre > 300){
+            console.log (`suhu panas`)
+        } 
+        else if (fahre < 250){
+            console.log (`suhu dingin`)
+        } else {
+            console.log (`suhu normal`)
+        }
+    </script>
+</body>
+</html>

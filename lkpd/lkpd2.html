@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // LKPD 2 No 1//
+        // let nama = "green"
+        // let gaji_pokok = 5000000
+        // const tunjangan = 0.2 * gaji_pokok
+        // const pajak = 0.15 * (gaji_pokok + tunjangan)
+        // const gaji_bersih = gaji_pokok + tunjangan - pajak
+
+        // console.log (`nama karyawan ${nama}`)
+        // console.log ("tunjangannya adalah:" + tunjangan)
+        // console.log (`pajaknya adalah : ${pajak}`)
+        // console.log (gaji_bersih)
+
+        // LKPD 2 no 2//
+        // let jam = 1
+        // let menit = 30
+        // let detik = 40
+        // const total_detik = (jam*3600) + (menit*60) + detik 
+        // console.log (`totalnya adalah ${total_detik}`)
+
+        // LKPD 2 No 3//
+        let detik = 5440
+        let jam = Math.floor(detik / 3600) // 1,5 //
+        // jadi hasilnya adalah 1//
+        let sisajam = detik % 3600 //sisanya 1800//
+        let menit = Math.floor(sisajam / 60) //30,66//
+        // hasilnya menjadi 30 menit//
+        let sisadetik = sisajam % 60 // sisanya 40 //
+
+        console.log (`jamnya : ${jam}`)
+        console.log (`menitnya : ${menit}`)
+        console.log (`sisa detik ${sisadetik}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //lkpd 4 no 1//
+        let PABP = 70
+        let MTK = 82
+        let DPK = 77
+        const rata_rata = (PABP + MTK + DPK)/3
+        if (rata_rata > 80 && rata_rata<=100){
+            console.log (rata_rata + "grade A")
+        } else if (rata_rata>75 && rata_rata<79){
+            console.log (rata_rata + "grade B")
+        } else if (rata_rata>65 && rata_rata<74){
+            console.log (rata_rata + "grade C")
+        } else if (rata_rata>45 && rata_rata<64){
+            console.log (rata_rata + "grade D")
+        } else if (rata_rata>0 && rata_rata<44){
+            console.log (rata_rata + "grade E")
+        } else {
+            console.log ("grade K")
+        } 
+
+        //lkpd 4 no 2//
+
+        let kode = 22505197803; //input 11 digit//
+        let g = Math.floor(kode/10000000000)
+        //utk dapat yg paling depan di g//10 digit//
+        let dd = Math.floor((kode/1000000000) % 100)
+        //utk mencari dua nilai//9 digit//
+        let mm = Math.floor((kode/1000000)%100)
+        //untuk mencari bulan//6 digit//
+        let yyyy = Math.floor((kode/100)%10000)
+        //untuk mencaru tahun//
+        let nn = Math.floor = ((kode%1000000000) % 100)
+
+        switch (mm) {
+            case 1:
+                bulan = "01";
+                break;
+        
+            case 2:
+                bulan = "02"
+                break;
+
+            case 3:
+                bulan = "03"
+                break;
+
+            case 4:
+                bulan = "04"
+                break;
+
+            case 5:
+                bulan = "05"
+                break;
+
+            case 6:
+                bulan = "06"
+                break;
+
+            case 7:
+                bulan = "07"
+                break;
+
+            case 8:
+                bulan = "08"
+                break;
+                
+            case 9:
+                bulan = "09"
+                break;
+
+            case 10:
+                bulan = "10"
+                break;
+
+            case 11:
+                bulan = "11"
+                break;
+
+            case 12:
+                bulan = "12"
+                break;
+        }
+        console.log ("kode 11 digit", kode)
+        console.log ("golongan adalah", g)
+        console.log ("tanggal", dd)
+        console.log ("bulan", bulan)
+        console.log ("tahun", yyyy)
+        console.log ("no urutan karyawan", nn)
+
+        //lkpd4 no 3//
+        let jam = 1
+        let menit = 59
+        let detik = 59
+
+        if (detik + 1 == 60 ){
+            detik = 0
+            menit++;
+                if(menit == 60){
+                    menit = 0
+                    jam++;
+                    if (jam == 24){
+                        jam = 0;
+                        menit = 0;
+                        detik = 0;
+                    }
+                }
+        } else {
+            menit++;
+        }
+        console.log (`Jam: ${jam}, Menit: ${menit}, Detik: ${detik}`)
+
+    </script>
+</body>
+</html>
